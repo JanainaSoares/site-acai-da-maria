@@ -1,181 +1,204 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
-body {
-    font-family: Arial, sans-serif;/*fonte do site*/
-    background-color:white;/*cor de fundo*/
-    background: url('./img/fundo1.png') no-repeat center center fixed;
-    background-size: cover;
-  }/*configuracao de fundo da pagina e formacao da fonte do site*/
-main{
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
 
-  min-width: 320px;
-  max-width: 800px;
-  margin: auto;
+body {
+  font-family: Arial, sans-serif;
+  /*fonte do site*/
+  background-color: white;
+  /*cor de fundo*/
+  background: url('./img/fundo1.png') no-repeat center center fixed;
+  background-size: cover;
+}
+/*configuracao de fundo da pagina e formacao da fonte do site*/
+/*header cabecalho*/
+
+header {
+  min-height: 100px;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
 
 }
-  header{
-    display: flex; /* exibe o header como um elemento flexível */
-    align-items: center;/* centraliza verticalmente o conteúdo do header */
-    margin: 2em; /*configura o tamanho do cabeçalho junto ao menu*/
-    font-family:Arial, Helvetica, sans-serif;
-  }
- 
-  h1{
-    text-align: center;
-    margin:auto;
-  }
 
-  h2{
-    text-align: center;
-    margin: o;
-  }
+h2 {
+  text-align: center;
+  margin: o;
+}
 
-  p{
-    font-family: Arial, sans-serif;/*fonte das escritas com paragrago*/
-    font-size: 16px;/*tamanho da fonte*/
-    color: #333;/*for da fonte*/
-    text-align: center;/*alinhamento*/
-  }/*configuração para as escritas  que contém paragrafo*/
+p {
+  font-family: Arial, sans-serif; /*fonte das escritas com paragrago*/
+  font-size: 16px; /*tamanho da fonte*/
+  color: #333; /*for da fonte*/
+  text-align: center; /*alinhamento*/
+  padding-top: 2%;
+}
 
-  li{
-    text-align: center;
-    margin: auto;
-    padding: 0 auto;
-  }
+/*configuração para as escritas  que contém paragrafo*/
+li {
+  text-align: center;
+  margin: auto;
+  padding: 0 auto;
+}
 
-  /*configuracao do menu*/
-  nav{
-    background-color: rgb(176, 117, 227);
-    display:block;
-    justify-content:end;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+/*configuracao do menu*/
+nav {
+  background-color: rgb(176, 117, 227);
+  display: flex;
+  flex-direction:column;
+  justify-content: end;
+  list-style-type: none;
+  margin: 0;
+  padding: o;
+}
 
-  nav ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  nav li{
-    justify-content: center;
-    margin: 1rem;
-  }
+nav li {
+  justify-content: center;
+  margin: 1rem;
+}
 
-  nav a{
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s;
-  }
+nav a {
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
 
-  nav a:hover{
-    color:black; /*cor  */
-    background-color: #ee6a26; /* cor */
-    padding: 0.5em 1em; /* adiciona preenchimento */
-  }
-section{
-    padding: 0rm;
+nav a:hover {
+  color: black;
+  /*cor  */
+  background-color: #ee6a26;
+  /* cor */
+  padding: 0.5em 1em;
+  /* adiciona preenchimento */
+}
+
+section {
+  padding: 0rm;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  form input, form textarea {
-    margin-bottom: 1rem;
-    padding: .5rem;
-    width: 50%;
-  }
-  
-  form button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: .5rem;
-    width: 50%;
-  }
-
-/* formulario*/
-#contato form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#contato input[type="text"], #contato input[type="email"], #contato textarea{
-    width: 60%;
-    padding: 0.5rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    border: 1px solid gray;
-    font-size: 1.2rem;
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: .5rem;
+  width: 50%;
+}
+
+form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: .5rem;
+  width: 50%;
+}
+
+/* formulario*/
+#contato form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+  width: 60%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 1.2rem;
 }
 
 #contato textarea {
-    height: 10rem;
-    resize: none;
+  height: 10rem;
+  resize: none;
 }
 
-#contato button[type="submit"]{
-    width: 20%;
-    padding: 1rem;
-    background-color: #d2691e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-top: 1rem;
+#contato button[type="submit"] {
+  width: 20%;
+  padding: 1rem;
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-  /*Rodape*/
-  #rodape {
-    text-align: center;
-    padding: 0px ;
-    background-color:  rgb(176, 117, 227);
-    color:black;
-  }
+/*Rodape*/
+#rodape {
+  text-align: center;
+  padding: 0px;
+  background-color: rgb(176, 117, 227);
+  color: black;
+}
 
-  #rodape img{
-    width: 20px;
-    height: 20px;
-    margin-right:0px;
-    vertical-align: middle;
-  }
+#rodape img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0px;
+  vertical-align: middle;
+}
+
+#rodape a {
+  color: black;
+  text-decoration: none;
+}
+
+.imagemsobre img {
+  width: 60%;
+  height: auto;
+}
+
+.imagemindex img {
+  width: 30%;
+  height: auto;
+}
+
+.imagemproduto img {
+  width: 250px;
+  height: 250px;
+}
+
+.imagemcardapio img {
+  width: 700px;
+  height: 900px;
+}
+@media screen {
   
-  #rodape a {
-    color:black;
-    text-decoration: none;
+}
+@media (max-width 700px) {
+  nav, ul, li{
+    flex-direction: column;
+    align-items: unset;
   }
-
-  .imagemsobre img {
-    width: 60%;
-    height: auto;
+  ul {
+    text-align: center;
   }
-
-  .imagemindex img {
-    width: 30%;
-    height: auto;
+  nav {
+    padding-top: 20px;
   }
-
-  .imagemproduto img {
-    width: 250px;
-    height: 250px;
-  }
-
- .imagemcardapio img {
-    width: 700px;
-    height: 900px;
- }
+}
